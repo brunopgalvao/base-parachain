@@ -16,3 +16,6 @@ It is used to generate parachains using [Pop CLI](https://github.com/r0gue-io/po
 👉 Learn more about parachains [here](https://wiki.polkadot.network/docs/learn-parachains).
 
 🧙 Learn about how to build using this template [here](https://docs.substrate.io/tutorials/).
+
+
+Test Broken Link: https://polkadot.com/404
