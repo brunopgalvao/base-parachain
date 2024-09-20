@@ -12,3 +12,4 @@ jobs:
           github_token: ${{ secrets.github_token }}
           reporter: github-check
           fail_on_error: true
+          config_file: ".linkspector.yml"
