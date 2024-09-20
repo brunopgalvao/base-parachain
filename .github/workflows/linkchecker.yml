@@ -6,6 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: List all files (Debugging)
+        run: |
+          echo "Listing all files to be scanned:"
+          ls -R
       - name: Run linkspector
         uses: umbrelladocs/action-linkspector@v1
         with:
