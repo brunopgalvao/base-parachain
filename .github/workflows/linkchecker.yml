@@ -10,7 +10,10 @@ jobs:
         run: |
           echo "Listing all files to be scanned:"
           ls -R .
-      - name: Run linkspector with detailed logging
-        run: |
-          linkspector --config .github/workflows/.linkspector.yml | tee output.log
-          cat output.log  # Display the output from linkspector
+      - name: Run linkspector with reviewdog flags
+        uses: umbrelladocs/action-linkspector@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-check  # You can still specify the reporter here
+          fail_on_error: true
+          config_file: ".github/workflows/.linkspector.yml"
