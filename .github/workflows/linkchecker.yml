@@ -10,9 +10,7 @@ jobs:
         run: |
           echo "Listing all files to be scanned:"
           ls -R .
-      - name: Install linkspector
+      - name: Run linkspector with detailed logging
         run: |
-          curl -sS https://raw.githubusercontent.com/UmbrellaDocs/linkspector/main/install.sh | sh
-      - name: Run linkspector directly
-        run: |
-          ./linkspector --config .github/workflows/.linkspector.yml
+          linkspector --config .github/workflows/.linkspector.yml | tee output.log
+          cat output.log  # Display the output from linkspector
