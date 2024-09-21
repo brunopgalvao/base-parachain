@@ -19,3 +19,5 @@ It is used to generate parachains using [Pop CLI](https://github.com/r0gue-io/po
 
 
 Test Broken Link: https://polkadot.com/404
+
+[This is a broken link](https://example.com/does-not-exist)
