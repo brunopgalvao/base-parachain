@@ -16,4 +16,3 @@ jobs:
           github_token: ${{ secrets.github_token }}
           reporter: github-check  # You can still specify the reporter here
           fail_on_error: true
-          config_file: ".github/workflows/.linkspector.yml"
