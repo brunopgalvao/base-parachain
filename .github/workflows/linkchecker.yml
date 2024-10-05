@@ -16,4 +16,4 @@ jobs:
           github_token: ${{ secrets.github_token }}
           reporter: github-check
           filter_mode: nofilter
-          fail_on_error: true
+          fail_level: error
